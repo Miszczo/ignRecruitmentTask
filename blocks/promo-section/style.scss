@@ -1,0 +1,39 @@
+.promo-section {
+  display: block;
+}
+
+.promo-section__inner {
+  display: flex;
+  gap: var(--space-l);
+  align-items: flex-start;
+}
+
+.promo-section__col {
+  min-width: 0;
+}
+
+.promo-section__col--left {
+  padding-top: 30px;
+  flex: 0 0 41.6667%;
+  max-width: 41.6667%;
+}
+
+.promo-section__col--right {
+  flex: 0 0 58.3333%;
+  max-width: 58.3333%;
+}
+
+@media (max-width: 992px) {
+  .promo-section__inner {
+    flex-direction: column;
+  }
+  .promo-section__col--left,
+  .promo-section__col--right {
+    flex: 1 1 auto;
+    max-width: 100%;
+  }
+}
+
+// Import local partials (header + card)
+@import "./scss/_header.scss";
+@import "./scss/_card.scss";

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Doppio+One&display=swap');
+
+:root {
+  /* Colors */
+  --color-green: #00A83F;
+  --color-red: #D93024;
+  --color-text: #303030;
+  --color-muted: #9DABBF;
+  --color-bg: #FFFFFF;
+  --color-surface: #ECF0F6;
+  --color-tint: #C9F1D8;
+
+  /* Radius */
+  --radius-card: 35px;
+  --radius-outline: 22px;
+  --radius-pill: 67px;
+
+  /* Spacing */
+  --space-s: 16px;
+  --space-m: 24px;
+  --space-l: 32px;
+}
+
+html body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--color-surface);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Doppio One', sans-serif;
+}
+
+.mt-auto {
+  margin-top: auto;
+}

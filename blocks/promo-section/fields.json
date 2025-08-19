@@ -1,0 +1,64 @@
+[
+  {
+    "key": "group_promo_section_card",
+    "title": "Promo Section Card",
+    "fields": [
+      {"key": "field_brand_badge_text", "label": "Brand", "name": "brand_badge_text", "type": "text", "default_value": "SUPERBET"},
+      {"key": "field_header_label", "label": "Nagłówek label", "name": "header_label", "type": "text", "default_value": "Kod promocyjny"},
+      {"key": "field_old_threshold", "label": "Stary próg (przekreślony)", "name": "old_threshold", "type": "text"},
+      {"key": "field_main_amount", "label": "Kwota główna", "name": "main_amount", "type": "number", "required": 1},
+      {"key": "field_bonus_amount", "label": "Bonus kwota", "name": "bonus_amount", "type": "number"},
+      {"key": "field_bonus_unit", "label": "Bonus jednostka", "name": "bonus_unit", "type": "select", "choices": {"PLN": "PLN"}, "default_value": "PLN"},
+      {"key": "field_amount_note", "label": "Podpis pod kwotą", "name": "amount_note", "type": "text", "default_value": "więcej na start"},
+      {"key": "field_promo_code", "label": "Kod promocyjny", "name": "promo_code", "type": "text", "required": 1},
+      {"key": "field_cta_label", "label": "CTA label", "name": "cta_label", "type": "text", "default_value": "Odbierz kod", "required": 1},
+      {"key": "field_cta_url", "label": "CTA URL", "name": "cta_url", "type": "url", "required": 1},
+      {"key": "field_cta_new_tab", "label": "Otwórz w nowej karcie", "name": "cta_new_tab", "type": "true_false", "default_value": 1},
+      {
+        "key": "field_benefits_lines",
+        "label": "Benefity",
+        "name": "benefits_lines",
+        "type": "repeater",
+        "layout": "table",
+        "button_label": "Dodaj benefit",
+        "sub_fields": [
+          {
+            "key": "field_benefit_amount",
+            "label": "Kwota benefitu",
+            "name": "benefit_amount",
+            "type": "text"
+          },
+          {
+            "key": "field_benefit_description",
+            "label": "Opis benefitu",
+            "name": "benefit_description",
+            "type": "text"
+          }
+        ]
+      },
+      {"key": "field_offer_valid_until", "label": "Oferta ważna do", "name": "offer_valid_until", "type": "date_picker", "display_format": "Y-m-d", "return_format": "Y-m-d"},
+      {"key": "field_legal_note", "label": "Nota prawna", "name": "legal_note", "type": "text", "default_value": "Legalny Polski Bukmacher"},
+      {"key": "field_show_outline", "label": "Pokaż zielone obramowanie", "name": "show_outline", "type": "true_false", "default_value": 1},
+      {"key": "field_accent_color", "label": "Akcent kolorystyczny", "name": "accent_color", "type": "select", "choices": {"#00A83F": "Zielony #00A83F", "#D93024": "Czerwony #D93024"}, "default_value": "#00A83F"}
+    ],
+    "location": [
+      [
+        {
+          "param": "block",
+          "operator": "==",
+          "value": "acf/promo-section"
+        }
+      ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Grupa pól dla bloku ACF Promo Section"
+  }
+]
+
+

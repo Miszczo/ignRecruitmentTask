@@ -1,0 +1,19 @@
+{
+  "name": "acf/promo-section",
+  "title": "Promo Section",
+  "description": "Two-column section: left header (5/12), right promo card (7/12).",
+  "category": "layout",
+  "icon": "columns",
+  "keywords": ["promo", "section", "columns"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "render.php"
+  },
+  "supports": {
+    "align": true,
+    "mode": false
+  },
+  "style": ["file:./style.css"]
+}
+
+

@@ -1,0 +1,51 @@
+.promo-section__meta {
+  display: flex;
+  gap: 16px;
+  color: var(--color-text);
+  font-size: 14px;
+  margin-bottom: 12px;
+  font-weight: 400;
+
+  .meta__item {
+    position: relative;
+    padding-left: 24px;
+    display: inline-flex;
+    align-items: center;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 18px;
+      height: 18px;
+      background: var(--icon-url) center/contain no-repeat;
+    }
+  }
+}
+
+.promo-section__title {
+  font-family: 'Doppio One', sans-serif;
+  font-weight: 400;
+  font-size: clamp(28px, 4vw, 54px);
+  line-height: 1.1;
+  margin: 0 0 12px 0;
+}
+
+.promo-section__author {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-text);
+  font-size: 16px;
+
+  .author__avatar {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+
