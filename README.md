@@ -57,3 +57,8 @@ npm run dev          # tryb watch do developmentu
 
 Masz pytania lub znalazłeś błąd?  
 Otwórz issue w repozytorium lub skontaktuj się mailowo.
+
+## Uwaga o nazwie folderu
+
+Repozytorium zawiera **bezpośrednio** pliki wtyczki. Po pobraniu paczki `.zip` z GitHuba WordPress rozpakowuje ją do katalogu `ignRecruitmentTask-main`.  
+Aby wtyczka została poprawnie rozpoznana, zmień nazwę tego katalogu na `acf-block` **lub** sklonuj repozytorium od razu do katalogu o takiej nazwie (jak w przykładzie powyżej).
